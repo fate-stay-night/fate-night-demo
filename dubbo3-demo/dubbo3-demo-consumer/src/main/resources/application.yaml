@@ -1,0 +1,15 @@
+server:
+  port: 8090
+
+# ===================================================================
+# dubbo config
+# ===================================================================
+dubbo:
+  application:
+    name: dubbo3-consumer-service
+  registry:
+    address: nacos://localhost:8848
+    timeout: 30000
+    session: 30000
+  protocol:
+    name: tri
